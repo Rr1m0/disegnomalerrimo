@@ -1,0 +1,53 @@
+
+body {
+    background-color: #070707e3;
+    color: #f5faf0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 10px;  
+  }
+
+  main {
+ 
+    margin: auto;
+    font-size: 1.09rem;
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 4rem;
+  }
+
+  
+/*----------------------
+   LINKS SETTINGS
+-----------------------*/   
+/* unvisited link */
+a:link { color: #fea324;
+}
+/* visited link */
+a:visited { 
+  color: #ed7d0c;
+}
+/* mouse over link */
+a:hover {
+  color: #fdf062;
+  background-color: #552b2b;
+  text-decoration: none;
+}
+/* selected link */
+a:active {
+  color: rgb(228, 129, 17); 
+}
+
+/*FOOTER*/
+footer a:link {
+  text-decoration: none;
+}
+footer a:visited {
+  color: rgb(245, 116, 64);
+}
+footer a:hover { 
+  background-color: #000000;
+  color: yellow;
+}
+/*////////////////////*/

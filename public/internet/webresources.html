@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Resources-disegnomalerrimo</title>
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+     <link href="/internet/style.css" rel="stylesheet" type="text/css" media="all">
+     <style>/*FONT CREDIT: MOZART NBP ---- made by Nate Halley using FontStruct*/
+        p { 
+          border-bottom: 1px dotted green; 
+          padding-bottom: 13px;
+          line-height: 1.6em
+        }
+        h2 { 
+          font-size:2em; 
+          border-bottom: none; 
+          font-family: mozart_nbpregular; 
+          margin-bottom: -15px;
+        }
+      .webreslist { 
+          border-bottom: 1px dotted green;
+          max-width: 750px;
+          margin: auto;
+        }
+        .bottomlink {
+          text-align: center;
+        } 
+        hr {
+          color: #29fd21; 
+          border-style: dotted;
+        }
+        
+    /*LINKS INSIDE WEBRESLIST NO BUTTON BUT TXT*/
+        .linkcontent a:link  {
+            color: #29fd21;
+          } 
+        .linkcontent a:visited  {
+            color: #29fd21;
+          } 
+        .linkcontent a:hover {
+            background-color: rgb(207, 207, 61);
+            color: #0a3509;
+            text-decoration: none;
+            font-weight: bold;
+          }  
+        .linkcontent a:active  {
+            color: #29fd21;
+          } 
+          
+    /*TITLE ATTRIBUTE CHANGE*/
+        [data-title]:hover::after {
+            opacity: 1;
+            transition: all 0s ease 0.1s;
+            visibility: visible;
+        }
+        [data-title]::after {
+            content: attr(data-title);
+            background-color: #00d700;
+            color: #111;
+            font-size: 85%;
+            position: absolute;
+            padding: 1px 5px 2px 5px;
+            bottom: 1.5em;
+            left: 70%;
+            white-space: nowrap;
+            box-shadow: 1px 1px 3px #222222;
+            opacity: 0;
+            border: 1px solid #111111;
+            z-index: 99999;
+            visibility: hidden;
+        }
+        [data-title] {
+            position: relative;
+        }
+
+        @media only screen and (max-width: 699px) {
+            .title {
+                font-size: 0.8em;
+              }
+            header, footer {
+                font-size: 1.6em;
+              } 
+            .subtitle {
+                font-size: 0.8em;
+              }  
+            .bottomlink {
+                font-size: 0.9em;
+              } 
+            a.weblink {
+               margin-right: 13px;
+              }
+          [data-title]:hover::after {
+                visibility: hidden;
+                font-size: 0px; 
+                }
+          [data-title]::after {                  
+                font-size: 0px; 
+               }
+          }
+      </style>
+    </head> 
+  <body>   
+<!--WEBRES NAVBAR >> #HASH: https://stackoverflow.com/questions/40091515/how-to-have-two-items-on-opposite-sides-on-the-same-line-->
+    <header><nav><div id="HASH">
+          <span id="time-HASH"><a href="/index.html">C:\>home</a></span>
+          <span><a href="/resources.html">D:\>art_resources</a></span>
+          </div>
+        </nav>
+          <hr>
+      </header>
+    <main>
+
+  <div class="title">
+    <h1 style="text-align: center; font-size: 4em; font-family: mozart_nbpregular;
+    text-shadow: 2px 0 #05a500, -1px 0 #05a500, 0 1px #05a500, 0 -1px #05a500,
+    2px 1px #05a500, -1px -1px #05a500, 1px -1px #05a500, -1px 1px #05a500; margin: 15px;">
+    Web Resources</h1></div>
+
+  <div class="webreslist" style="border-bottom: none; padding-bottom: 10px;">
+    <p class="center">Let's get coding! 
+      (੭•̀ω•́)੭ 
+      </p>
+
+    <section>
+      <div id="tools">
+      <p>
+        <a href="https://www.w3schools.com/" class="weblink" >w3schools</a>
+        Free HTML/CSS tutorials. Where I learned how to build this website and where I continue to go back to for reference.
+      </p>
+
+      <p> 
+        <a href="https://code.visualstudio.com/" class="weblink" >VisualStudio Code</a>
+        Code editor. Useful plugins: *live server (it emulates a local server on your computer so you can see how your site will look like before updating it to the online server) 
+        and *prettier (to see the code better).<br>
+        I personally use <a href="https://vscodium.com/" class="linkcontent">VSCodium</a>, the freely-licensed/Microsoft-telemetry-free distribution of this software. 
+      </p>
+
+      <p>
+        <a href="https://neocities.org" class="weblink" >neocities.org</a>
+        Free site hosting. Used to host this very site! Excellent to experiment. 
+        It also has social features and you can explore other personal websites as they are <a href="https://neocities.org/browse?sort_by=last_updated&tag=" class="linkcontent" >being updated</a>.
+      </p> 
+
+      <p>
+        <a href="https://zonelets.net/" class="weblink" >Zonelets</a>
+        Simple free blogging engine you can implement in you website. What I first used for my "blog" section. 
+      </p>
+
+      <p style="margin-bottom: 5px;"> 
+        <a href="https://status.cafe" class="weblink" >status.cafe</a>
+        Simple and useful tools to update statuses. Customizable and with a widget you can paste on your website. 
+      </p>
+
+      <p>
+        <a href="https://bearblog.dev/" class="weblink" >bearblog</a>
+        Simple and light blogging platform. It has a <a href="https://bearblog.dev/discover/" class="linkcontent" >discover page</a> where you can read some posts and blogs. 
+      </p>
+
+      <p>
+        <a href="https://www.robotstxt.org/robotstxt.html" class="weblink" >robot.txt</a>
+        How to set up robot.txt to block some or all internet robots from crawling your site. 
+        (the ones that listen to the .txt file anyway)  
+      </p>
+
+      <p>
+        <a href="https://www.w3schools.com/XML/xml_rss.asp" class="weblink" >RSS guide</a> 
+        How to add a <a href="https://aboutfeeds.com/"  class="linkcontent" >RSS feed</a> to your website. 
+        Another, maybe simpler guide can be found at <a href="https://rssguide.neocities.org/" class="linkcontent" >rssguide.neocities</a>.
+      </p>
+
+      <p>
+        <a href="https://validator.w3.org/" class="weblink" >validator.w3</a>
+        Nu Html Checker. It checks if your HTML file has some issues to help you better formatting. 
+        Useful especially when starting coding so you can catch mistakes early.
+      </p>
+
+      <p>
+        <a href="https://wave.webaim.org/" class="weblink" >WAVE Accessibility</a>
+        WAVE Web Accessibility Evaluation Tools. It checks your pages and tells you how you can make it more accessible. 
+        Uselful to use at the beginning of your coding journey as it can point out rookie mistakes.
+      </p>
+
+      <p>
+        <a href="https://www.deadlinkchecker.com/" class="weblink" >dead link checker</a>
+        Checks if you are linking to any removed page.
+      </p>
+
+      <p>
+        <a href="https://github.com/ctrl-freaks/freezeframe.js/tree/master/packages/freezeframe" class="weblink" >freezeframe.js</a>
+        Script to pause .gifs' animation. 
+        I use it on my [links] page to pause the buttons' animations. I followed <a href="https://bechnokid.neocities.org/resources/tut_freezeframe" class="linkcontent" >this tutorial</a> from Bechno Kid to make it work on my site.
+        At first the script was making the images enourmous, but I tweaked the code and now it looks fine. If you have the same problem as me copy my script and CSS. Maybe it'll help!
+      </p>
+
+      <p>
+        <a href="https://www.fontsquirrel.com/tools/webfont-generator" class="weblink" >fontsquirrel</a>
+        Webfont generator. It converts .ttf/.otf/etc font files into .woff & .woff2 to use them on your site.
+      </p>
+
+      <p>
+        <a href="https://htmlcolorcodes.com/" class="weblink" >RGB color picker</a>
+        RGB color codes picker. Similar to <a href="https://www.w3schools.com/colors/colors_picker.asp" class="linkcontent" >w3schools colors picker</a>.  
+      </p> 
+
+      <p>
+        <a href="https://webaim.org/resources/contrastchecker/" class="weblink" >contrastchecker</a>
+        Check if the colour contrast between foreground(text) and background is enough to make your page easily readable.  
+      </p> 
+
+      <p>
+        <a href="https://tinypng.com/" class="weblink" >tinypng</a>
+        Reduce the size of .jpeg .webp and .png files. Essential to reduce your pages' size and make them load faster. 
+        <a href="https://www.base64-image.de/" class="linkcontent" >base64</a> does the same.
+      </p>
+
+      <p>
+        <a href="https://exifcleaner.com/" class="weblink" >exifcleaner</a>
+        Privacy friendly open source software that removes metadata from photos. Supports .png .jpg .gif and .tiff. 
+      </p>
+
+      <p>
+        <a href="https://picdefacer.com/en/" class="weblink" >picdefacer</a>
+        Image Anonymization - privacy friendly free online tool to blur or pixelate photos and images. 
+      </p>
+    
+  </div>
+    </section>
+  </div>
+<!--END WEBRESLIST-->
+
+   <hr style="margin-top: 25px; margin-bottom: 10px;">
+
+<!--GUIDE HOW TO START-->
+  <section>
+    <div id="startguide">
+      <div class="bottomlink">
+      <h2>CODING:/ ...STARTING PACK</h2>
+          <p class="linkcontent"  style="border-bottom: none; font-size: 1.2em;">
+
+            ※<a href="https://developer.mozilla.org/en-US/docs/Learn/Getting_started_with_the_web" >Getting started with the web</a> - MDN mozilla<br>
+
+            ※<a href="https://webguide.neocities.org/" >A Beginner's Guide to HTML and CSS</a> by Pauli Kohberger<br>
+
+            ※<a href="https://32bit.cafe/cyowebsite/" >Creating Your Own Website</a> by 32bit.cafe<br>
+
+            ※<a href="https://www.freecodecamp.org/learn/2022/responsive-web-design/">Responsive Web Design guided tutorials</a> by freecodecamp<br>  
+
+            ※<a href="https://www.giraffeacademy.com/web-development/css/">CSS video tutorials</a> by Giraffe Academy<br>
+
+            ※<a href="https://thoughts.melonking.net/guides/introduction-to-the-web-revival-1-what-is-the-web-revival" >Intro to the Web Revival</a> by melonking<br>
+
+            ※<a href="https://sadgrl.online/webmastery/webmaster-links" >Webmaster links</a> by sadgirl.online<br>
+
+            </p>
+      </div>
+    </div>
+  </section>
+
+  <hr style="margin-top: 25px; margin-bottom: 10px;">
+
+  <section>
+    <div id="access">
+  <!--ACCESSIBILITY READING LIST-->
+    <div class="bottomlink">
+        <h2>ABOUT : ACCESSIBILITY</h2>
+        <p class="linkcontent"  style="border-bottom: none; font-size: 1.2em;">
+          
+            ※<a href="https://kalechips.net/posts/2022-09-09-Mobile-Compatibility" >Your Website Needs to Work on Phones</a> by kalechips<br>
+            ※<a href="https://fri11s.neocities.org/blog/accessibility/" >Accessibility master post</a> by Frills<br>
+            ※<a href="https://sleepydev.neocities.org/posts/5%20Ways%20to%20make%20your%20Neocities%20site%20more%20accessible" >5 ways to make your neocities site more accessible</a> by sleepydev<br>
+            ※<a href="https://brucelawson.co.uk/2018/the-practical-value-of-semantic-html/">The practical value of semantic HTML</a> by Bruce Lawson <br>
+            ※<a href="https://joshcollinsworth.com/blog/never-use-px-for-font-size">Never use px to set font-size in CSS</a> by Josh Collinsworth<br>
+            ※<a href="https://solaria.neocities.org/readability" >Readability Tips</a> by Solaria<br>
+
+        </p>
+    </div>
+    </div>
+  </section>
+
+  <hr style="margin-top: 25px; margin-bottom: 10px;">
+
+  <section>
+    <div id="misclinks">
+<!--MISC LIST-->
+      <div class="bottomlink">
+       <h2>sudo apt-get [graphics] [more]</h2>
+        <p class="linkcontent"  style="border-bottom: none; font-size: 1.2em;">
+
+          <a href="https://waifu2x.booru.pics/" data-title="2x image resizer" >waifu2x</a> //
+          <a href="https://ezgif.com/" data-title="create animated .gif" >ezgif</a> //
+          <a href="http://xahlee.info/comp/unicode_index.html?q=" >unicode search</a> 
+
+          <br>
+
+          <a href="https://doodad.dev/dither-me-this/" data-title="dither effect your pictures" >dither me this</a> // 
+          <a href="https://app.monopro.org/pixel/?lang=en" data-title="pixelate your picture" >Pixelart Converter</a> //
+          <a href="http://www.mf2fm.com/rv/" >RV's JS/DHTML effects</a>
+          
+          <br>
+
+          <a href="https://gifcities.org/" data-title="Internet Archive .gif search engine" >gifcities</a> //
+          <a href="https://99gifshop.neocities.org/" >99 gif shop</a> //
+          <a href="https://horrorgifs.neocities.org/" >horrorgifs</a> //
+          <a href="https://tholman.com/cursor-effects/" >90's cursor effect</a>
+
+          <br>
+
+          <a href="https://github.com/you-dont-need/You-Dont-Need-JavaScript" data-title="neat CSS code snippets">You don't need JS</a> //         
+          <a href="https://doodlenerd.com/css-element/speech-bubble-generator" >CSS Speech Bubble</a>
+
+          <br>
+
+          <a href="https://www.w3schools.com/TAGS/ref_pxtoemconversion.asp" data-title="convert pixels to ems">px to em</a> //
+          <a href="https://caniuse.com/" data-title="browser support tables" >can I use</a> //
+          <a href="https://www.sven.de/dpi/" >dpi calculator</a>
+
+          
+            
+        
+        </p>
+     </div>
+   </div>
+  </section>
+  
+
+</main> 
+<!--FOOTER-->      
+<footer style="text-align: center;">
+  <hr style="margin-top: 30px;" >
+  <a href="#">A:\>page_top</a></footer>
+</body>
+</html>

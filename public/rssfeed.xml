@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>disegnomalerrimo</title>
+        <link>https://disegnomalerrimo.neocities.org</link>
+        <description>major updates of disegnomalerrimo's personal website</description>
+        <atom:link href="https://disegnomalerrimo.neocities.org/rssfeed.xml" rel="self" type="application/rss+xml" />
+        <language>en-us</language>
+
+<item>
+    <title>New Post: Sketch Dump #3 </title>
+    <pubDate>Thu, 07 Dec 2023 18:00:00 EST</pubDate>
+    <link>https://disegnomalerrimo.neocities.org/</link>
+    <guid>https://disegnomalerrimo.neocities.org/</guid>
+    <description> 
+    <ul>
+    <li>Hello, fellow netizens! (o´▽`o) Today I updated my journal with a <a href="https://disegnomalerrimo.neocities.org/blog/posts/06-Sketch-Dump-3.html">NEW SKETCH DUMP</a></li>
+    <li> I also recently updated the section where I talk about my personal use of websites and SNS/social media in the <a href="https://disegnomalerrimo.neocities.org/internet/">internet page</a></li>  
+    <li> And I created a new page on my collection about my <a href="https://disegnomalerrimo.neocities.org/blog/collection/horror_movies">favourite horror movies!</a> </li>
+    <li> I hope you'll have a wonderful day/night! BYE!</li>   
+    </ul>
+    </description>
+</item>
+
+<!---->
+    </channel>
+</rss>

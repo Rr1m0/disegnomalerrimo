@@ -1,0 +1,195 @@
+/*code blog only*/
+@font-face {
+  font-family: 'autumn';
+  src: url('/blog/posts/img/fonts/autumn_in_november-webfont.woff2') format('woff2'),
+       url('/blog/posts/img/fonts/autumn_in_november-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  scrollbar-color: #e76f00 black;
+}
+
+body  {
+    background-color: rgba(7, 7, 7, 0.89);
+    color: #f5faf0;
+    font-family: Verdana;
+    
+    margin: 10px;
+  }
+  .content {
+    max-width: 850px;
+    font-size: 1.09rem;
+    margin: auto;
+    padding: 10px 5% 20px 5%;
+  }
+  
+  /*NAVBAR*/
+  nav > a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 216, 43);
+  }
+  nav > a:link {
+    text-decoration: none;
+    color: rgb(245, 116, 64);
+  }
+  nav {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+
+  /* NAVBAR BUTTON CODE 
+    //////////////////////////////////////////////*/ 
+  
+    .navbutton {
+    background-color: rgb(28, 28, 29);
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+  
+    font-size: 23px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  
+    position: relative;
+    padding: 5px; 
+  }
+
+  /* //////////////////////////////////////////////
+    END NAVBAR BUTTON CODE */ 
+
+  /* unvisited link */
+  a:link {
+    color: rgb(248, 191, 106);
+  }
+  /* visited link */
+  a:visited {
+    color: rgb(245, 116, 64);
+  }
+  /* mouse over link */
+  a:hover {
+    color: rgb(248, 175, 39);
+    text-decoration: none;
+    background-color: #552b2b;
+  }
+  /* selected link */
+  a:active {
+    color: rgb(228, 129, 17);
+  }
+  
+/* /////////////////////////////////////////
+                 BLOG CODE
+  ////////////////////////////////////////*/  
+  p {
+    line-height: 1.5em; 
+  }
+  hr {
+    border: solid #c0825d;
+    border-width: 2px 0 0 0;
+  } 
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+  .right {
+    float: right;
+    margin-left: 1em;
+  }
+  .left {
+    float: left;
+    margin-right: 1em;
+  }
+  .center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .caption {
+    margin-top: 0;
+    font-size: 0.9em;
+    font-style: italic;
+    text-align: center;
+  }
+
+  details {
+    cursor: pointer;
+  }
+    
+  h1, h2, h3 {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fff1a4;
+  }
+  h1 {
+    text-align: center;
+  }
+  h2 { text-align: center; 
+    font-size: 1.3em; 
+    margin-bottom: 22px; 
+    margin-top: 10px;
+  }
+  .postdate {
+    text-align: right; 
+    font-size: 1.4em; 
+    font-family: autumn, 'Brush Script MT', monospace, cursive;
+  }
+
+  .container {
+    margin: 2em auto;
+    width: 90%;
+    max-width: 800px;
+    background-color: #141311;
+    color: #faf5f0;
+    
+   
+    margin-top: -10px;
+  }
+  
+  footer { 
+      text-align: center;  }
+  footer a:link { 
+      text-decoration: none; 
+      }
+  footer  a:hover { 
+      background-color: transparent;
+      font-weight: bold;
+      color: yellow;
+      }
+   
+  
+      @media only screen and (max-width: 49rem) 
+        {  
+          body {
+          font-size: 1rem; }
+          .navbutton {
+            border-width: 3px;
+            font-size: 18px; 
+            padding: 6px;
+            margin-bottom: 5px; 
+            margin-left: 1px;
+            margin-right: 1px;
+            line-height:45px;
+          }
+          nav {
+            margin-top: -5px;
+          }         
+          .container {
+            margin-top: -35px;
+            margin-left: 1px;
+            margin-right: 1px;
+            width: 100%;
+          }
+          h1 { 
+            font-size: 1.6em;
+          }
+        }

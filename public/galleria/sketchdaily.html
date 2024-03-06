@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SketchDaily-disegnomalerrimo</title>
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link href="/galleria/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>  
+         main {
+            max-width: 1300px;
+            margin: auto;
+            text-align: center;
+          }
+        .textgallery {
+            max-width: 720px;
+            margin: auto;
+           }
+        .gallery {
+            max-width: 1200px;
+            margin: auto;           
+            }  
+        img {
+           border: 2px solid #cc6600; 
+           border-radius: 5px;  
+           padding: 0px; 
+           max-width: 230px;                    
+           }
+        img:hover {
+           box-shadow: 0 0 4px 3px rgba(221, 143, 9, 0.5);           
+           }
+        .gallery a:hover {
+           background-color: transparent;
+           }
+
+           .studybutton {
+            font-size: 1.5rem;          
+            border: 2px solid orange;
+            background-color: black;
+            border-radius: 5px;
+            max-width: 10rem;
+            margin: auto;
+            margin-top: 1.8rem;          
+            text-decoration: none;
+            padding: 7px;
+           }
+           a.studybutton{
+            color: white;
+           }
+           a.studybutton:hover{
+            background-color: #cc6600;
+            color: black;
+           }
+          
+        /*TITLE ATTRIBUTE CHANGE*/
+        [data-title]:hover::after {
+            opacity: 1;
+            transition: all 0s ease 0.0s;
+            visibility: visible;
+        }
+        [data-title]::after {
+            content: attr(data-title);
+            background-color: #ffd500;
+            color: #111;
+            font-size: 90%;
+            position: absolute;
+            padding: 1px 5px 2px 5px;
+            bottom: 0em;
+            left: 10%;
+            white-space: nowrap;
+            box-shadow: 1px 1px 3px #222222;
+            opacity: 0;
+            border: 1px solid #111111;
+            z-index: 99999;
+            visibility: hidden;
+        }
+        [data-title] {
+            position: relative;
+        }
+
+        @media only screen and (max-width: 699px) {
+       /* [data-title]::after { 
+            font-size: .8em;
+            position: absolute;
+            padding: 1px 3px 2px 3px;
+            
+        }
+        [data-title]:active::after {
+            opacity: 1;
+            transition: all 0s ease 0.0s;
+            visibility: visible;
+         }*/
+
+         [data-title]:hover::after {
+                visibility: hidden;
+                font-size: 0px; 
+                }
+          [data-title]::after {                  
+                font-size: 0px; 
+               }
+        }
+    </style>
+  </head>
+  <body>
+  
+    <main>
+
+
+      <div class="textgallery">
+        <h1>↓ ::: SketchDaily Entries ::: ↓</h1>
+        <p>Some sketches I submitted to the <a href="https://www.reddit.com/r/SketchDaily">r/SketchDaily</a> challenge<br> 
+          [01 June 2023 ～ December 2023]</p> 
+      </div>
+
+<!--SKETCHDAILY ENTRIES-->
+      <div class="gallery" style="margin-top: 50px;">
+      
+        <a href="/galleria/img/sketchdaily/psp.webp" data-title="Red PSP">
+          <img src="/galleria/img/sketchdaily/psp.webp" alt= "watercolour drawing of a Red PSP" aria-label="Red PSP" ></a>
+        
+        <a href="/galleria/img/sketchdaily/greenglass.webp" data-title="Green Glass">
+          <img src="/galleria/img/sketchdaily/greenglass.webp" alt= "pencil drawing on gray paper of a Green Glass" aria-label="Green Glass"></a>
+
+        <a href="/galleria/img/sketchdaily/xfiles.webp" data-title="I WANT TO BELIEVE">
+          <img src="/galleria/img/sketchdaily/xfiles.webp" alt= "ink drawing inspired by X Files poster" aria-label= "I WANT TO BELIEVE"></a>
+        
+        <a href="/galleria/img/sketchdaily/warningdanger.webp" data-title="Dangerous Warning Sign">
+          <img src="/galleria/img/sketchdaily/warningdanger.webp" alt= "drawing of a person running away from a Dangerous Sign" aria-label= "Dangerous Warning Sign"></a>
+       
+        <a href="/galleria/img/sketchdaily/johnoliver.webp" data-title="John Olivel ♡ Cabbage">
+          <img src="/galleria/img/sketchdaily/johnoliver.webp" alt= "drawing of John Olivel Marrying a Cabbage" aria-label= "John Olivel LUV Cabbage"></a>
+        
+          <br>
+
+        <a href="/galleria/img/sketchdaily/monkeyisland.webp" data-title="Monkey Island">
+          <img src="/galleria/img/sketchdaily/monkeyisland.webp" alt= "an ink and pencil drawing of Monkey Island's map" aria-label= "Monkey Island"></a>
+
+        <a href="/galleria/img/sketchdaily/keys.webp" data-title="Home">
+          <img src="/galleria/img/sketchdaily/keys.webp" alt= "ink drawing of my keys" aria-label= "Home"></a>
+        
+        <a href="/galleria/img/sketchdaily/sella.webp" data-title="Saddle">
+          <img src="/galleria/img/sketchdaily/sella.webp" alt= "ink and waterclour drawing of a Saddle" aria-label= "Saddle"></a>    
+
+        <a href="/galleria/img/sketchdaily/fungus.webp" data-title="Fungus Boy">
+          <img src="/galleria/img/sketchdaily/fungus.webp" alt= "pencil and watercolour sketch of a cute Fungus Boy" aria-label= "Fungus Boy"></a>
+
+        <a href="/galleria/img/sketchdaily/microscopio.webp" data-title="Microscopio">
+          <img src="/galleria/img/sketchdaily/microscopio.webp" alt= "pencil sketches of two microscopes" aria-label= "Microscopio"></a>
+
+          <br>
+        
+        <a href="/galleria/img/sketchdaily/necronomicute.webp" data-title="NecronomiCUTE">
+          <img src="/galleria/img/sketchdaily/necronomicute.webp" alt= "Evil Dead Necronomicon in watercolour pencils" aria-label= "NecronomiCUTE"></a>
+
+        <a href="/galleria/img/sketchdaily/chiclet.webp" data-title="Chiclet">
+          <img src="/galleria/img/sketchdaily/chiclet.webp" alt= "drawing of a parrot" aria-label= "Chiclet - Parrot sketch made for r/parrot crossover"></a>
+        
+        <a href="/galleria/img/sketchdaily/girlpreppy03.webp" data-title="Doodle">
+          <img src="/galleria/img/sketchdaily/girlpreppy03.webp" alt= "Doodle of a person in ink and watercolour" aria-label= "Doodle"></a>
+
+          <br>
+
+          <a href="/galleria/img/sketchdaily/ugly_sweater.webp" data-title="Ugly Christmas Sweater">
+            <img src="/galleria/img/sketchdaily/ugly_sweater.webp" alt= "Two people wearing ugly Christmas sweaters next to each other" aria-label= "Ugly Christmas Sweater"></a>
+
+
+
+     </div> 
+
+   
+
+    </main>
+    <footer><span style="font-size: 2rem;"> ⇜</span> <a href="/gallery.html" style="font-size: 1.5rem; ">GALLERY</a></footer>
+  </body>
+</html>

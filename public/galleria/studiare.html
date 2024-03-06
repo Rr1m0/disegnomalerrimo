@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Studies-disegnomalerrimo</title>
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+    <link href="/galleria/style.css" rel="stylesheet" type="text/css" media="all">
+    <style>
+        body {
+            text-align: center;
+            background-color: #070707e3;
+            color: #f5faf0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin: 10px;  
+        }
+ 
+        .great_container { 
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .wrapper {
+        position: relative;
+        max-width: 330px;
+        display: flex;
+        margin: 20px;
+        }
+
+        img { 
+            max-width: 330px;
+        }
+
+        .img__description {
+        position: absolute;
+        text-align: left;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(255, 234, 99, 0.72);
+        color: black;
+        visibility: hidden;
+        opacity: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        padding-left: 5px;
+        padding-right: 5px;
+        transition: opacity .5s, visibility .5s;
+        }
+
+        .wrapper:hover .img__description {
+        visibility: visible;
+        opacity: 1;
+        }
+
+        .data {
+            text-decoration: underline;
+        }
+
+        .great_container a:link{
+            color: purple;
+        }
+        .great_container a:visited{
+            color: purple;
+        }
+        .great_container a:hover{
+            color: pink;
+        }
+        footer a:link, a:visited {
+            color: yellow;
+        }
+
+        @media only screen and (max-width: 699px) 
+            {
+            .wrapper:active .img__description {
+                visibility: visible;
+                opacity: 1;
+                }
+    /*fineclick*/
+       .wrapper {     
+             max-width: 250px;     
+        }
+        img { 
+            max-width: 250px;
+        }
+
+    }
+    </style> 
+</head>
+<body>
+    <main>
+    <h1>Art Studies</h1>
+    <h2>Studiare & Imparare</h2>
+    
+<p>This is an archive of some studies I'm trying to do more often.<br>
+    This page is mostly for personal accountability since right now I don't have that many incentives for doing proper studies.<br>
+    Maybe seeing this page so barren will motivate me to fill it up with more stuff!<br>
+</p>
+    <p> Memento: Learning is a constant work in progress!</p>
+
+<div class="great_container">
+
+
+    <div class="wrapper">
+        <img class="imageinside" src="/galleria/img/studi/Manet_Isabelle.webp" >
+        <p class="img__description">
+            <span class="data"> Dec. 2023</span><br>
+Referenced from a sketch of Isabelle Lemmonier by Manet (I can't find the same sketch online to link here).<br>
+I particularly liked the face profile and the simplicity of the dress, so I attempted to replicate it. 
+</div>
+
+<div class="wrapper">
+    <img class="imageinside" src="/galleria/img/studi/Degas_Russian_Dancer.webp">
+    <p class="img__description">
+        <span class="data"> Dec. 2023</span><br>
+Referenced from <a href="https://en.wikipedia.org/wiki/File:Three_Russian_Dancers,_by_Edgar_Degas.jpg">Three Russian Dancers</a> by Edgar Degas.<br>
+I liked the dynamic dancing poses and the thickness of the lines in the original.<br>
+There are a lot of mistakes in this, mostly the lenght of the left leg and other limbs. Whoops?! 
+</div>
+
+
+</div>
+</main>
+<footer><span style="font-size: 2rem;"> ⇜</span> <a href="/gallery.html" style="font-size: 1.5rem; ">GALLERY</a></footer>
+</body>
+</html>

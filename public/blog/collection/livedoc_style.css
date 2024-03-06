@@ -1,0 +1,160 @@
+/*CODE JOURNAL > COLLECTION*/
+
+* {
+    scrollbar-color: #e76f00 black;
+  }
+
+  body  {
+    color: #f5faf0;
+    font-family: Verdana;
+   
+    margin: 10px;
+    margin-top: 0px;
+  }  
+  main {
+    margin: auto;
+    padding: 10px 5% 10px 5%;
+    font-size: 1.05rem;
+  } 
+  p {
+    line-height: 1.7em; 
+  }  
+  img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }  
+  h1, h2 {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fff1a4;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+    font-size: 1.3em;   
+  }
+
+
+  body { 
+    background-color: rgb(40, 40, 40);     
+}
+
+.maincontainer {        
+    max-width: 940px;
+    background-color: rgb(25, 25, 25);
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    
+    margin: auto;
+    border-radius: 0px 0px 20px 20px;
+    padding-bottom: 40px;
+}
+header {
+    padding: 10px 5% 10px 5%;
+   padding-top: 2rem;
+}
+#HASH {
+    display: flex;
+    justify-content: space-between;
+    }
+
+hr {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+h1 {
+    line-height: normal;
+}
+
+h2 {
+    font-size: 1.3rem;
+    margin-bottom: 0.6rem;
+    background-color: rgb(128, 41, 41);
+    color: rgb(255, 255, 173);
+    max-width: 100%;
+    padding: 0.8rem;}
+
+h3 {
+    margin-top: 1.8rem;
+    color: rgb(252, 253, 206);
+    font-size: 1.55rem;
+    line-height: 1.8rem;
+}
+h3::before {
+    content: ">";
+}
+
+table, th, td {
+    border:1px solid white;
+}
+
+td { 
+    padding: 10px;
+}
+table { 
+    width: 100%;
+}
+
+a:link {
+     color: rgb(248, 191, 106);
+}  
+a:visited {
+    color: rgb(255, 134, 86);
+}   
+a:hover {
+    color: rgb(248, 175, 39);
+    text-decoration: none;
+}   
+a:active {
+    color: rgb(228, 129, 17);
+}
+
+.TW {
+    text-align: center;
+    border: 1px solid white;
+    max-width: 340px;
+    margin: auto;
+    padding: 8px;
+}
+
+.codeexample {
+    margin-left: 1.5rem;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 2.3rem;
+}
+
+.rssnode {
+    margin-left: 15px;
+    text-decoration: underline;
+}
+
+.titleislongomg {
+    font-size: 0.8em;
+}
+
+#books h3 {
+    font-weight: 100;
+}
+
+.author {
+    font-style: italic;
+    margin-top: -10px;           
+    margin-left: 2.2rem;
+}
+
+@media only screen and (max-width: 699px) {  
+    #HASH {
+        display: block;  
+        }
+
+         footer  {
+          font-size: 1em; }       
+    }
+  
+

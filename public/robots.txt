@@ -1,0 +1,12 @@
+#       ___ ___             
+#    |  (o) (o)  |    <no bots here pls thank you 
+#         /_               
+#     /_________
+#
+#
+# protect your site from bots! 
+# https://www.robotstxt.org/robotstxt.html
+
+
+User-agent: *
+Disallow: /

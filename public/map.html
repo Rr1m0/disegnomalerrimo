@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Map-disegnomalerrimo</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <style> 
+    /* LINK TREE CODE FROM: 
+    https://stackoverflow.com/questions/14423671/best-method-for-displaying-a-tree-list-using-css-only-no-images-or-js-example */
+       
+       
+       
+       main {
+          margin-bottom: 25px;
+          max-width: 750px;
+          margin: auto;
+        }
+        .maplist {
+          margin-top: 55px;
+            padding-left: 35px;
+            padding-bottom: 8px;           
+            font-size: 1.2em;
+            line-height: 1.5em;
+          } 
+        ul {
+          padding: 10px;
+          margin:0px;
+          list-style-type: none;
+          position: relative;
+        }
+        li {
+          list-style-type: none;
+          border-left: 2px solid #c4c10d;
+          margin-left: 70px;
+        }
+        li a {
+          padding-left: 20px;
+          position: relative;
+          display: inline-block;
+        }
+        li a::before {
+          content:'';
+          position: absolute;
+          top: 0;
+          left: -2px;
+          bottom: 50%;
+          width: 15px;
+          border: 2px solid #c4c10d;
+          border-top: 0 none transparent;
+          border-right: 0 none transparent;
+        }
+        ul > li:last-child {
+          border-left: 2px solid transparent;
+        }
+        /* ////////////////////////
+          END code link tree*/
+
+        a:link {
+        text-decoration: none;
+        }
+        a:visited {
+        color: rgb(245, 116, 64);
+        }
+        a:hover {
+        color: rgb(220, 248, 39);
+        background-color: black;
+        }      
+        h1 {
+        text-align: center;
+        padding-bottom: 50px;
+        }
+
+        .exxu {
+          font-family: 'Times New Roman', Times, serif;
+        }
+
+        .exxu:hover {
+          color: transparent;
+        }
+    
+        @media only screen and (max-width: 786px) {
+          .container {
+              width: 100%;
+              margin: auto; 
+          }
+          li {
+              margin-left: 20px;
+          }
+          ul {
+          padding: 15px;
+          font-size: 0.9em;
+          } 
+          .maphome {
+              margin-left: -60px;
+              font-size: 0.9em;
+          }
+          main {
+            font-size: 1em;       
+          }
+          h1 {
+            font-size: 2.5em;
+            padding-bottom: 25px;
+          }
+          .maplist {
+            line-height: 1.1em;
+            margin-left: -20px; 
+          }     
+       }
+   </style>
+</head>
+  <body>
+    <main>
+
+    
+   
+     <div class="maplist">
+        <div class="maphome">
+         <a href="/index.html" style="margin-left: 45px; margin-bottom: 20px;">disegnomalerrimo</a> 
+          </div>
+            <ul>  
+              <li><span style="color: transparent;">  .</span></li>           
+              <li><a href="/gallery.html">GALLERY</a> : perdonami, Padre, perché ho peccato
+                <ul>
+                 
+                  <li><a href="/galleria/pixel_art.html">pixels</a> <a href="/galleria/sketchdaily.html">sketchdaily</a> <a href="/galleria/studiare.html">studies</a> </li> 
+                </ul></li>
+              <li><a href="/blog/index.html">JOURNAL</a> : chaos.html
+                <ul>
+                  <li><a href="/blog/archive.html">archive</a> : old wounds</li> 
+                </ul>
+              <li><a href="/resources.html">ART resources</a> : how to take over the world              
+                  <li><a href="internet/webresources.html">WEB resources</a> : do you wanna build a website~♪</li>
+              <li><a href="/link.html">LINKS</a> : buon viaggio e arrivederci!</li>
+              <li><a href="/about.html">ABOUT</a> : me, myself, my ego and the site
+                <ul>
+                  <li><a href="/internet/index.html">internet</a> : wasting time surfing since 2001</li>
+                  <li><a href="/blog/collection/favourites.html">favourites</a> : my beloved pile of trash</li>
+                  <li><a href="/blog/collection/horror_movies.html">horror movies</a> : hoarding traumatic cinematics </li>
+                </ul>
+                <li><a href="/credits.html">...credits</a> : where credit's due</li> 
+              <li><a href="/map.html">...site map</a> : <span class="exxu">X</span> marks the spot</li>
+              
+                      
+              <li><a href="/not_found.html">(404)</a> </li>
+            </ul>
+         </div>
+      </div>
+    </main>
+    <!--
+    <footer>
+      <hr>   
+      <div class="footerlink"><a href="/index.html" class="footeranimation">HOME</a></div>
+    </footer>-->
+  </body>
+</html>

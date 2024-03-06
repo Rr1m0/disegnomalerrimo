@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOP RIGHT THERE CRIMINAL SCUM</title>
+    <link rel="icon" href="../img/favicon.png" type="image/x-icon">
+     <link href="/internet/style.css" rel="stylesheet" type="text/css" media="all">
+     <style>
+      @keyframes shudder01 
+      {
+        0%, 100% {}
+        50% { transform: translateX(0.2em) }
+      }
+      @-webkit-keyframes shudder01 
+      {
+        0%, 100% {}
+        50% { -webkit-transform: translateX(0.2em) }
+      }
+      @keyframes shudder02 
+      {
+        0%, 100% {}
+        50% { transform: translateX(0.5em) }
+      }
+      @-webkit-keyframes shudder02 
+      {
+        0%, 100% {}
+        50% { -webkit-transform: translateX(0.5em) }
+      }
+      shudder01 
+      {
+        -webkit-animation: shudder01 linear 0.3s 0s infinite;
+        animation: shudder01 linear 0.3s 0s infinite;
+            display:inline-block;
+      }
+      shudder02 
+      {
+        -webkit-animation: shudder02 linear 0.5s 0s infinite;
+        animation: shudder02 linear 0.5s 0s infinite;
+            display:inline-block;
+      }
+
+    .maincontainer {
+        position: fixed;   
+        top: 25px;
+        left: 30%;
+        
+        text-align: center;
+        min-width: 800px;
+        min-height: 1100px;   
+        margin:auto;
+
+        background-color: #808080;
+        border-top: 35px solid rgb(0, 30, 255);
+        color: black;  
+        margin-top: 0px;  
+        border: 4px outset rgb(224, 224, 224);   
+      }
+    .alert {
+        text-align: center;
+        max-width: 500px;
+        min-height: 250px;
+        position: relative;  
+        margin:auto;
+        margin-top: 25px;
+        padding: 20px;
+        padding-top: 25PX;
+        background-color: #cb0e00;
+        border: 5px dashed yellow;
+        color: black;   
+      }
+      .closebuttoncontainer {
+        color: black;
+        font-weight: bold;
+        float: right;
+        margin-right: 5px;
+        margin-top: 3px;
+        font-size: 27px;
+        line-height: 20px;
+        cursor: pointer;
+        transition: 0.3s;
+        border: 2px outset rgb(224, 224, 224);
+        background-color: rgb(173, 173, 173);
+      }
+      .closebuttoncontainer:hover {
+        color: red;
+      }
+
+      .windowsup {
+        background-color: rgb(0, 0, 212);
+        border: 15px solid rgb(0, 0, 212);
+        color: white;
+        font-size: 1em;
+        font-style: bold;
+        font-family: monospace;
+        text-align: left;
+        line-height: 0%;  
+      }
+
+      .line01 {
+        font-size: 1.7em;
+        font-weight: bold;
+      }
+      .line02 {
+        font-size: 1.4em;
+        font-weight: bold;
+      }
+      .line03 {
+        font-size: 1em;
+        font-weight: normal;
+      }
+      .line04 {
+        font-size: 1.2em;
+        margin-top: 60px;
+      }
+
+    .buttonhome {
+      border: 3px outset rgb(196, 196, 196);
+      padding: 10px;
+      max-width: 80px;
+      margin: auto;
+      margin-top: 85px;
+      background-color: rgb(152, 152, 152);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .robaccia {    
+      position: fixed;
+      max-width: 430px;   
+      max-height: 400px;
+      top: 25px;
+      left: 40%;
+      z-index: -1;
+      border: 2px solid rgb(102, 255, 0);
+      background-color: rgb(0, 172, 184); 
+      color: black;
+    }
+    .robaccia > a:link, a:visited, a:active {
+      color: rgb(0, 26, 255);
+    }
+
+    a.buttonhomelink {
+      text-decoration: none;
+      color: black;
+      padding-top: 7px;
+      padding-right: 17px;
+      padding-bottom: 7px;
+      padding-left: 17px;  
+    }
+    a.buttonhomelink:hover {
+      border: 1px dotted black;
+      border-radius: 3px;
+    }
+
+@media only screen and (max-width: 1000px) {
+    .robaccia { 
+     max-width: 350px;       
+     top: 25px;
+     left: 30%;    
+    }   
+  .maincontainer {
+    min-height: 900px;
+    min-width: 500px;
+    width: 340px;
+    top: 25px;
+    left: 20%;    
+  }
+  .finale p {
+    font-size: 75%;
+  }
+}  
+
+@media only screen and (max-width: 699px) {
+    .robaccia { 
+     max-width: 280px;       
+     top: 25px;
+     left: 10%;  
+    }   
+  .maincontainer {
+    min-height: 900px;
+    min-width: 350px;
+    width: 340px;
+    top: 25px;
+     left: 5%; 
+  }
+  .finale p {
+    font-size: 75%;
+  }
+}  
+
+@media only screen and (max-width: 450px) {
+    .robaccia { 
+     max-width: 270px;       
+     top: 25px;
+     left: 7%;  
+    }   
+  .maincontainer {
+    min-height: 900px;
+    min-width: 340px;
+    width: 340px;
+    top: 25px;
+     left: 3%; 
+  }
+  .finale p {
+    font-size: 75%;
+  }
+}  
+  </style>
+  </head>
+  <body>
+  
+<div class="maincontainer" style="z-index: 100;">
+  <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+    <div class="windowsup">!!! WARNING !!!</div>
+      <div class="alert">  
+        <p class="line01">WARNING</p>
+        <p class="line02">DANGER</p>   
+        <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+        <!--NOSCRIPT WARNING--> 
+<noscript><article><p>**<span style="text-decoration: underline;">Your Javascript is disabled</span>. <br>Unfortunately this page requires Javascript to function. <br> Javascript is simply used to interact with the [X] to close the "window".</p></article> </noscript>
+
+      </div>  
+      <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+  </div>
+
+
+  <div class="maincontainer" style="z-index: 99;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line01">WARNING</p>
+          <p class="line02">DANGER</p>   
+          <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 98;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line01">WARNING</p>
+            <p class="line02">DANGER</p>   
+            <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+  <div class="maincontainer" style="z-index: 97;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line01">WARNING</p>
+          <p class="line02">DANGER</p>   
+          <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 96;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line01">WARNING</p>
+            <p class="line02">DANGER</p>   
+            <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+      <div class="maincontainer" style="z-index: 95;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line01">WARNING</p>
+              <p class="line02">DANGER</p>   
+              <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+  <div class="maincontainer" style="z-index: 94;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line01">WARNING</p>
+          <p class="line02">DANGER</p>   
+          <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 93;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line01">WARNING</p>
+            <p class="line02">DANGER</p>   
+            <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+  <div class="maincontainer" style="z-index: 92;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line01">WARNING</p>
+          <p class="line02">DANGER</p>   
+          <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 91;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line01">WARNING</p>
+            <p class="line02">DANGER</p>   
+            <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+  <div class="maincontainer" style="z-index: 90;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line01">WARNING</p>
+          <p class="line02">DANGER</p>   
+          <p class="line03"> ARE NOT SUPPOSED TO BE HERE</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+    
+    <div class="maincontainer" style="z-index: 89;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04"> ...</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>          
+              
+    <div class="maincontainer" style="z-index: 88;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04"> ...</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+          
+    <div class="maincontainer" style="z-index: 87;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04"> ...</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+  <div class="maincontainer" style="z-index: 86;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">  HEY...</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+    
+    <div class="maincontainer" style="z-index: 85;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04"> ...HEY</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+      
+  <div class="maincontainer" style="z-index: 84;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">  ...UH...</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+    
+    <div class="maincontainer" style="z-index: 83;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04"> ...SO...</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+    <div class="maincontainer" style="z-index: 82;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04"> YOU STILL HERE, UH? </p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+    
+    <div class="maincontainer" style="z-index: 81;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04"> DON'T YOU HAVE ANYTHING BETTEER TO DO???</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 80;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04"> WHAT WERE YOU EXPECTING???</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 79;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">I KNOW WHAT YOU WERE EXPECTING, <br><BR> CLICKING ON THAT BUTTON... </p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 78;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">THE <i>"BOOTY"</i>, RIGHT????</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 77;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">WELL... I GOT NOTHING FOR YOU</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 76;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">YOU KNOW, I'M AN UPSTANDING CITIZEN</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 75;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">NEVER PIRATED ANYTHING IN MY LIFE</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+
+    <div class="maincontainer" style="z-index: 74;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04"> EVER</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 73;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">NEVER EVER NEVER</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 72;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">NO NO</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 71;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">NOPE</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+    <div class="maincontainer" style="z-index: 70;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">...</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+  <div class="maincontainer" style="z-index: 69;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">WHAT?!</p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 68;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">YOU DON'T BELIEVE ME???</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+
+    <div class="maincontainer" style="z-index: 67;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04"> WELL, MATE, YOU GOT NO PROOF!</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+  <div class="maincontainer" style="z-index: 66;">
+    <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+      <div class="windowsup">!!! WARNING !!!</div>
+        <div class="alert">  
+          <p class="line04">NOW, SHOOO </p>
+        </div>  
+        <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+    </div>
+
+    <div class="maincontainer" style="z-index: 65;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">GO AWAY! </p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+          
+    <div class="maincontainer" style="z-index: 64;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">SKEDADDLE OR WHATEVER</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+      <div class="maincontainer" style="z-index: 63;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line04">...</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+
+        <div class="maincontainer" style="z-index: 62;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">...</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+          <div class="maincontainer" style="z-index: 61;">
+            <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <div class="windowsup">!!! WARNING !!!</div>
+                <div class="alert">  
+                  <p class="line04">...</p>
+                </div>  
+                <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+            </div>
+
+
+    <div class="maincontainer" style="z-index: 60;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">EHM</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+      <div class="maincontainer" style="z-index: 59;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line04">YO</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+
+        <div class="maincontainer" style="z-index: 58;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">SE NE VADA, PER FAVORE????</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+          
+          <div class="maincontainer" style="z-index: 57;">
+            <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <div class="windowsup">!!! WARNING !!!</div>
+                <div class="alert">  
+                  <p class="line04">GUARDATE CHE CHIAMO LA POLIZIA, EH???</p>
+                </div>  
+                <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+            </div>
+
+            <div class="maincontainer" style="z-index: 56;">
+              <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <div class="windowsup">!!! WARNING !!!</div>
+                  <div class="alert">  
+                   <p class="line04">OI, ARE YOU HEARING ME?</p>
+                  </div>  
+                  <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+              </div>
+
+    <div class="maincontainer" style="z-index: 55;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">WILL YOU GO AWAY OR NOT???</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+
+      <div class="maincontainer" style="z-index: 54;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line04"> CLOSE THIS PAGE</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+        <div class="maincontainer" style="z-index: 53;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04"> CLOSE</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+          <div class="maincontainer" style="z-index: 52;">
+            <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <div class="windowsup">!!! WARNING !!!</div>
+                <div class="alert">  
+                  <p class="line04"> THIS</p>
+                </div>  
+                <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+            </div>
+
+            <div class="maincontainer" style="z-index: 51;">
+              <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+                <div class="windowsup">!!! WARNING !!!</div>
+                  <div class="alert">  
+                    <p class="line04"> PAGE</p>
+                  </div>  
+                  <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+              </div>
+
+        <div class="maincontainer" style="z-index: 50;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">NOW</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+
+          <div class="maincontainer" style="z-index: 49;">
+            <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <div class="windowsup">!!! WARNING !!!</div>
+                <div class="alert">  
+                  <p class="line04">...</p>
+                </div>  
+                <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+            </div>
+
+      <div class="maincontainer" style="z-index: 48;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line04">...</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+        <div class="maincontainer" style="z-index: 47;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">...</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+        <div class="maincontainer" style="z-index: 46;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">OK</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+          <div class="maincontainer" style="z-index: 45;">
+            <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+              <div class="windowsup">!!! WARNING !!!</div>
+                <div class="alert">  
+                  <p class="line04"> NOW YOU'VE DONE IT</p>
+                </div>  
+                <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+            </div>
+
+    <div class="maincontainer" style="z-index: 44;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">I'M COMING OVER THERE NOW</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+    <div class="maincontainer" style="z-index: 43;">
+      <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+        <div class="windowsup">!!! WARNING !!!</div>
+          <div class="alert">  
+            <p class="line04">JUST YOU WAIT</p>
+          </div>  
+          <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+      </div>
+
+      <div class="maincontainer" style="z-index: 42;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line04">YOU'LL SEE ME SOON</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+        <div class="maincontainer" style="z-index: 41;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">I <span style="text-decoration: underline;">DID</span> WARN YOU... </p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+      <div class="maincontainer" style="z-index: 40;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line04">NOW IT'S TOO LATE</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+        <div class="maincontainer" style="z-index: 39;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">...</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+      <div class="maincontainer" style="z-index: 38;">
+        <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+          <div class="windowsup">!!! WARNING !!!</div>
+            <div class="alert">  
+              <p class="line04">..</p>
+            </div>  
+            <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+        </div>
+
+        <div class="maincontainer" style="z-index: 37;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">!!! WARNING !!!</div>
+              <div class="alert">  
+                <p class="line04">.</p>
+              </div>  
+              <div class="buttonhome"><a href="/index.html" class="buttonhomelink"><span style="text-decoration: underline;">H</span>ome</a></div>
+          </div>
+
+        <div class="maincontainer" style="background-color: black; z-index: 1;">
+          <span class="closebuttoncontainer" onclick="this.parentElement.style.display='none';">&times;</span> 
+            <div class="windowsup">.T.O.O. .L.A.T.E.</div>
+              <div class="finale" style="margin: 10px;">  
+                <p style="color: white; font-size: 4em;"><shudder01>*KNOCK KNOCK*</shudder></p>
+                <p style="color: white; font-size: 1.8em; text-align: right;"><shudder02>*KNOCK KNOCK*</shudder02></p>
+                <p style="color: white; font-size: 2em; font-style: italic;"><shudder01>*KNOCK KNOCK*</shudder01></p>
+                <p style="color: white; font-size: 0.8em; text-align: right;"><shudder01>*KNOCK KNOCK*</shudder></p>
+                <p style="color: white; font-size: 3em; text-align: left;"><shudder02>*KNOCK KNOCK*</shudder02></p>
+                <p style="color: white; font-size: 4em; text-align: right; font-style: italic;"><shudder01>*KNOCK KNOCK*</shudder01></p>
+                <p style="color: white; font-size: 0.8em; text-align: left;"><shudder01>*KNOCK KNOCK*</shudder></p>
+                  <p style="color: white; font-size: 2.5em; "><shudder02>*KNOCK KNOCK*</shudder02></p>
+                  <p style="color: white; font-size: 0.8em; text-align: right;"><shudder01>*KNOCK KNOCK*</shudder></p>
+                    <p style="color: white; font-size: 3.5em; text-align: left; font-style: italic;"><shudder01>*KNOCK KNOCK*</shudder01></p>
+              </div>  
+
+        </div>
+              
+          
+                                                                                                                                                                <div class="robaccia" style="text-align: center; padding: 5px; font-size: 0.9em;">
+
+                                                                                                                                                                  <p style="font-size: 1.2em; font-weight: bolder; color: #930a00;">CONGRATS (???)! <br>
+                                                                                                                                                                  You didn't turn around! <br> You found the *TREASURE*</p>
+                                                                                                                                                                  <p>
+                                                                                                                                                                      my heart goes: 
+                                                                                                                                                                      <a href="https://www.youtube.com/watch?v=R1I3acAE8JA">Piratiamo!</a> |
+                                                                                                                                                                      to set the mood: <a href="https://keygenmusic.tk">musica!</a> <br>
+                                                                                                                                                                      <a href="https://www.base64decode.org/">decode</a
+                                                                                                                                                                      >> <span style="font-size: 0.9em; font-family: monospace;">
+                                                                                                                                                                      bGVtbXkuZGJ6ZXIwLmNvbS9jL3BpcmFjeQ</span> <br> 
+                                                                                                                                                                      ♥happy and safe sailing♥<br>
+                                                                                                                                                                    <span style="font-size: 0.5rem;"> *I obviously <b>do not condone piracy</b>. this is for archivial purpose only. 
+                                                                                                                                                                      and for the joke *wink wink </span> </p> 
+                                                                                                                                                                    </div> 
+  </body>
+  </html>

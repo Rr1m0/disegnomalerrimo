@@ -1,0 +1,205 @@
+/*CSS blog: index/archive only*/
+* {
+  scrollbar-color: #e76f00 black;
+}
+
+   body  {
+    background-color: rgba(7, 7, 7, 0.89);
+    color: #f5faf0;
+    font-family: Verdana;  
+    margin: 10px;
+  }
+  .content {
+    max-width: 880px;
+    font-size: 1.09rem;
+    margin: auto;
+    padding: 10px 65px 20px 65px;
+    
+  } 
+  /*NAVBAR*/
+  nav > a:hover {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 216, 43);
+  }
+  nav > a:link {
+    text-decoration: none;
+    color: rgb(245, 116, 64);
+  }
+  nav {
+    max-width: 800px;
+    margin: auto;
+    margin-top: 15px;
+    margin-bottom: 40px;
+  }
+  /* NAVBAR BUTTON CODE 
+    //////////////////////////////////////////////*/ 
+  
+    .navbutton {
+    background-color: rgb(28, 28, 29);
+    border-style: solid;
+    border-width: 4px;
+    border-color: white;
+    
+    border-bottom-left-radius: 15px 255px;
+    border-bottom-right-radius: 225px 15px;
+    border-top-left-radius: 255px 15px;
+    border-top-right-radius: 15px 225px;
+  
+    font-size: 23px; 
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+  
+    position: relative;
+    padding: 5px; 
+  }
+  /* //////////////////////////////////////////////
+    END NAVBAR BUTTON CODE */ 
+  
+  /* unvisited link */
+  a:link {
+    color: rgb(248, 191, 106);
+  }
+  /* visited link */
+  a:visited {
+    color: rgb(245, 116, 64);
+  }
+  /* mouse over link */
+  a:hover {
+    color: rgb(248, 175, 39);
+    text-decoration: none;
+  }
+  /* selected link */
+  a:active {
+    color: rgb(228, 129, 17);
+  }
+  
+/* /////////////////////////////////////////
+                 BLOG CODE
+  ////////////////////////////////////////*/  
+  p {
+    line-height: 1.7em; 
+  }  
+  hr {
+    border: solid #c0825d;
+    border-width: 2px 0 0 0;
+  } 
+  .center {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  } 
+  h1, h2, h3 {
+    font-family: Tahoma, Geneva, sans-serif;
+    color: #fff1a4;
+  }
+  .container {
+    margin: 2em auto;
+    width: 90%;
+    max-width: 880px;
+    background-color: #141311;
+    color: #faf5f0;
+    margin-top: -10px;
+  }
+  .container a:hover { 
+    background-color: #552b2b;
+  }
+
+/**---------------------
+     STATUS.CAFE
+------------------------**/
+    #statuscafe-username a {
+      display:none;
+      }
+    #statuscafe {
+     padding: .5em;
+     border: 1px solid orange;
+     border-radius: 10px 10px 10px 10px;
+     background-color: #1f1f1f;
+     box-shadow: -2px 2px 2px 1px rgb(197, 168, 3);
+     margin-top: 10px;
+     margin-bottom: 20px;
+     }
+    #statuscafe-username {
+     margin-bottom: .5em;
+     text-align: right;
+     font-family: monospace;     
+     }
+    #statuscafe-content {
+     margin: 0 1em 0.5em 1em;
+     }
+    .statuslink {
+     display:inline;
+     float:left;
+    }
+     a.statuslink {
+      text-decoration: none;
+      color: #ffc31d;  
+      font-family: monospace;
+     }
+      a.statuslink:visited {
+     text-decoration: none;
+     color: #ffc31d;  
+     font-family: monospace;  
+     }
+     a.statuslink:hover {
+     color: #fff127;
+     background-color: transparent;
+     font-size: 1em;
+     }    
+/*----------------------*/
+
+/*LINK BUTTON FOR COLLECTION*/
+    a.collectionlink {
+      font-size:1.2em;
+      padding: 6px; 
+      padding-left: 14px; 
+      padding-right: 14px;
+      margin-right: 10px;
+  
+      line-height: 2.5em;
+      font-weight: normal;
+      font-family: monospace;
+      
+      border: 3px outset rgb(153, 153, 153);
+      border-radius: 10px;
+      background-color:#a02424;
+      text-decoration: none;
+      color: #fff1a4;
+     }
+     a.collectionlink:hover{
+        background-color:#7e1b1b;
+        font-weight: bold;      
+        font-size: 1.2em;
+     }
+
+/*BUTTON SKETCHDUMPS*/
+      a.sketchlink {
+        font-size:1.2em;
+        padding: 13px; 
+        padding-left: 14px; 
+        padding-right: 14px;
+        margin-right: 20px;
+    
+        line-height: 2.5em;
+        font-weight: bold;
+        font-family: monospace;
+        
+        border: none;
+        border-radius: 100px;
+        background-color:#eb8100;
+        text-decoration: none;
+        color: #000000;
+      }
+      a.sketchlink:hover{
+         background-color: #eb8100;
+         text-decoration:  overline underline;        
+         font-weight: bold;      
+         font-size: 1.2em;
+      }
+/*////////////////////////*/
+
+     footer {
+       text-align: right;
+       font-size: 0.8em;         
+     }

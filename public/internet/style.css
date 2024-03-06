@@ -1,0 +1,99 @@
+/*internet pages only css*/
+@font-face {
+    font-family: 'mozart_nbpregular';
+    src: url('../internet/font/mozartnbp/mozartnbp.woff2') format('woff2'),
+         url('../internet/font/mozartnbp/mozartnbp.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+  scrollbar-color: #218300 black;
+}
+
+
+body {
+  background-color: rgba(7, 7, 7, 0.953);
+  color: #f5faf0;
+  font-family: Verdana, Arial, Helvetica, sans-serif; 
+  margin: 10px;
+}
+main {
+  max-width: 800px;
+  margin: auto;
+  font-size: 1.09rem;
+}
+
+/* INTERNET NAV HEADER and FOOTER*/ 
+header, footer  { 
+  font-size: 2.3em;
+  color: rgb(45, 218, 45);
+  font-family: mozart_nbpregular, Lucida Console, monospace;
+  position: relative;
+  max-width: 800px;
+  margin: auto; 
+} 
+p {
+  line-height: 1.3em; 
+}
+.center {
+  text-align: center;
+}
+
+/* BUTTONS */
+.buttons {
+  text-align: center; 
+}
+
+/*LINKS*/
+a:link {
+  color: #00ee00;
+}
+a:visited {
+  color: #05a500;
+}
+a:hover {
+  color: #00ee00;
+}
+a:active {
+  color: #29fd21;
+}
+details {
+  cursor: pointer;
+}
+#HASH {
+  display: flex;
+  justify-content: space-between;
+}
+
+/*aasdfghjkl*THESE DAMN LINKS LOL*
+********************************
+LINK BUTTONS*/
+  a.weblink {
+    font-size:1.2rem;
+    padding: 5px; 
+    padding-left: 12px; 
+    padding-right: 12px;
+    margin-right: 20px;
+    line-height: 2.5em;
+    font-weight: bold;
+    font-family: monospace;
+    color: #00d4d4;
+    border: 2px outset rgb(224, 224, 224);
+    background-color:#f63bc1;
+    text-decoration: none;
+    color: black; 
+    }
+  a.weblink:hover{
+    background-color:#00d4d4; 
+    }
+/*---------------------------*/
+    a.linkcontent  {
+      color: #29fd21;
+    } 
+    a.linkcontent:hover {
+      background-color: rgb(207, 207, 61);
+      color: #0a3509;
+      font-weight: bold;
+      text-decoration: none;
+    }  
