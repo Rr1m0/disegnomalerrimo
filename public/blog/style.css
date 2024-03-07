@@ -108,9 +108,7 @@
 /**---------------------
      STATUS.CAFE
 ------------------------**/
-    #statuscafe-username a {
-      display:none;
-      }
+  
     #statuscafe {
      padding: .5em;
      border: 1px solid orange;
@@ -119,12 +117,22 @@
      box-shadow: -2px 2px 2px 1px rgb(197, 168, 3);
      margin-top: 10px;
      margin-bottom: 20px;
+     max-height: 100px;  
+     overflow: auto;
      }
-    #statuscafe-username {
-     margin-bottom: .5em;
-     text-align: right;
-     font-family: monospace;     
+
+     #statuscafe {
+      scrollbar-color: #2e0800 black;
      }
+
+    .status_open {
+     line-height: 0rem;
+     font-family: monospace; 
+     font-size: 0.9em;  
+     margin-top: 0.4rem;
+     }
+
+/*
     #statuscafe-content {
      margin: 0 1em 0.5em 1em;
      }
@@ -147,6 +155,9 @@
      background-color: transparent;
      font-size: 1em;
      }    
+    
+     */
+     
 /*----------------------*/
 
 /*LINK BUTTON FOR COLLECTION*/

@@ -5,6 +5,10 @@
     font-family: Helvetica, sans-serif !important;
 }
 
+h1 { 
+    font-size: 13pt !important;
+}
+
 @page {
     margin-top: 2rem;
     margin-right: 0.5rem;
@@ -16,10 +20,42 @@ h1, h2, h3, h4, h5, h6 {
     page-break-after: avoid !important;
 }
 
+.title {
+    page-break-inside: avoid !important;
+}
+
+.subtitle {
+    page-break-after: avoid !important;
+}
+
 p, li, blockquote, figure, img {
     page-break-inside: avoid !important;
 }
 
 footer {
+    display: none;
+}
+
+/*blog posts*/
+.navbutton {
+    display: none;
+}
+
+/*live documents only*/
+.upsx {
+    display: none;
+}
+header p {
+    display: none;
+}
+.booksection {
+    page-break-inside: avoid !important;
+}
+
+/*internet folder*/
+#HASH > span {
+    display: none;
+}
+.buttons {
     display: none;
 }

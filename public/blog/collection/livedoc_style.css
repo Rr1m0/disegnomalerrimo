@@ -118,6 +118,22 @@ a:active {
     padding: 8px;
 }
 
+.table_content {
+    max-width: 450px;
+    margin: auto;
+    background-color: rgb(36, 34, 34);
+    padding: 0.2rem 0.3rem 0.7rem 0.7rem;
+    line-height: 1.6rem;
+}
+
+.table_content h2 {
+   background-color: transparent;
+    font-size: 1rem;
+    text-align: left;
+    padding-bottom: 0.5rem;
+    color: rgb(217, 217, 217);
+}
+
 .codeexample {
     margin-left: 1.5rem;
 }

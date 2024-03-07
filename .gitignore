@@ -1,1 +1,5 @@
 /public/todolist.txt
+/public/blog/posts/template_blogpost.html
+
+.DS_Store
+.prettierignore
